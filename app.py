@@ -51,7 +51,7 @@ def main():
                 add_message("User", st.session_state.user_input)
                 add_message("Mistral", output, is_user=False)
                 st.session_state.user_input = ""  # Clear input after submission
-                st.experimental_rerun()  # Rerun the app to clear the input field
+                st.experimental_rerun()  
             except Exception as e:
                 st.error(f"An error occurred: {e}")
 
